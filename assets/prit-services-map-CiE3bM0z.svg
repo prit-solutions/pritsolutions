@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 450" width="770" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a3a5c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#246bce;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a4fa0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a9b55;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b03020;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c07000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6e3080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="node5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1abc9c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d8070;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="770" height="450" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Grid decorativo de puntos -->
+  <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="rgba(255,255,255,0.07)"/>
+  </pattern>
+  <rect width="770" height="450" fill="url(#dots)" rx="12"/>
+
+  <!-- Líneas de conexión al centro (385, 225) -->
+  <!-- Nodo 1: Arquitectura (130, 90) -->
+  <line x1="385" y1="225" x2="130" y2="100" stroke="rgba(46,204,113,0.5)" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Nodo 2: Desarrollo (640, 90) -->
+  <line x1="385" y1="225" x2="640" y2="100" stroke="rgba(231,76,60,0.5)" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Nodo 3: Talento (100, 300) -->
+  <line x1="385" y1="225" x2="110" y2="340" stroke="rgba(243,156,18,0.5)" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Nodo 4: Integraciones (660, 300) -->
+  <line x1="385" y1="225" x2="660" y2="340" stroke="rgba(155,89,182,0.5)" stroke-width="2" stroke-dasharray="6,4"/>
+  <!-- Nodo 5: Gestión (385, 400) -->
+  <line x1="385" y1="225" x2="385" y2="400" stroke="rgba(26,188,156,0.5)" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Círculo decorativo central exterior -->
+  <circle cx="385" cy="225" r="80" fill="none" stroke="rgba(36,107,206,0.3)" stroke-width="1" stroke-dasharray="4,4"/>
+  <circle cx="385" cy="225" r="100" fill="none" stroke="rgba(36,107,206,0.15)" stroke-width="1"/>
+
+  <!-- Nodo central: PRIT Solutions -->
+  <circle cx="385" cy="225" r="66" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <circle cx="385" cy="225" r="66" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <text x="385" y="214" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="800" fill="#ffffff" filter="url(#glow)">PRIT</text>
+  <text x="385" y="234" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.8)" letter-spacing="2">SOLUTIONS</text>
+  <line x1="340" y1="241" x2="430" y2="241" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="385" y="256" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.65)" letter-spacing="1">TECNOLOGÍA &amp; TALENTO</text>
+
+  <!-- ===== NODO 1: Arquitectura de Software (arriba izquierda) ===== -->
+  <circle cx="130" cy="100" r="52" fill="url(#node1Grad)" filter="url(#shadow)"/>
+  <circle cx="130" cy="100" r="52" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Ícono: capas -->
+  <rect x="108" y="78" width="44" height="7" rx="3" fill="rgba(255,255,255,0.9)"/>
+  <rect x="112" y="89" width="36" height="7" rx="3" fill="rgba(255,255,255,0.7)"/>
+  <rect x="116" y="100" width="28" height="7" rx="3" fill="rgba(255,255,255,0.5)"/>
+  <text x="130" y="122" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">Arquitectura</text>
+  <text x="130" y="134" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">de Software</text>
+
+  <!-- ===== NODO 2: Desarrollo de Software (arriba derecha) ===== -->
+  <circle cx="640" cy="100" r="52" fill="url(#node2Grad)" filter="url(#shadow)"/>
+  <circle cx="640" cy="100" r="52" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Ícono: código </> -->
+  <text x="640" y="97" text-anchor="middle" font-family="'Courier New', monospace" font-size="22" font-weight="900" fill="rgba(255,255,255,0.9)">&lt;/&gt;</text>
+  <text x="640" y="117" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">Desarrollo</text>
+  <text x="640" y="129" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">de Software</text>
+
+  <!-- ===== NODO 3: Escalamiento de Talento (abajo izquierda) ===== -->
+  <circle cx="110" cy="340" r="52" fill="url(#node3Grad)" filter="url(#shadow)"/>
+  <circle cx="110" cy="340" r="52" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Ícono: personas -->
+  <circle cx="100" cy="320" r="8" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="120" cy="320" r="8" fill="rgba(255,255,255,0.7)"/>
+  <path d="M84 338 Q100 330 116 338" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,0.9)" stroke-width="1"/>
+  <path d="M104 338 Q120 330 136 338" fill="rgba(255,255,255,0.7)" stroke="rgba(255,255,255,0.7)" stroke-width="1"/>
+  <text x="110" y="358" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">Escalamiento</text>
+  <text x="110" y="370" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">de Talento</text>
+
+  <!-- ===== NODO 4: Integraciones de Sistemas (abajo derecha) ===== -->
+  <circle cx="660" cy="340" r="52" fill="url(#node4Grad)" filter="url(#shadow)"/>
+  <circle cx="660" cy="340" r="52" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Ícono: engranaje/integración -->
+  <circle cx="650" cy="328" r="10" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="2.5"/>
+  <circle cx="670" cy="328" r="10" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="2.5"/>
+  <line x1="640" y1="328" x2="680" y2="328" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="660" cy="328" r="4" fill="rgba(255,255,255,0.6)"/>
+  <text x="660" y="355" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">Integraciones</text>
+  <text x="660" y="367" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9.5" font-weight="700" fill="#ffffff">de Sistemas</text>
+
+  <!-- ===== NODO 5: Gestión de Proyectos (abajo centro) ===== -->
+  <circle cx="385" cy="410" r="32" fill="url(#node5Grad)" filter="url(#shadow)"/>
+  <circle cx="385" cy="410" r="32" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Ícono: check list -->
+  <rect x="372" y="398" width="26" height="24" rx="3" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+  <line x1="378" y1="405" x2="392" y2="405" stroke="rgba(255,255,255,0.9)" stroke-width="1.5"/>
+  <line x1="378" y1="411" x2="392" y2="411" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
+  <line x1="378" y1="417" x2="388" y2="417" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+  <text x="385" y="438" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Gestión de</text>
+  <text x="385" y="448" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff">Proyectos</text>
+
+  <!-- Puntos de conexión sobre las líneas -->
+  <circle cx="257" cy="162" r="4" fill="rgba(46,204,113,0.8)"/>
+  <circle cx="512" cy="162" r="4" fill="rgba(231,76,60,0.8)"/>
+  <circle cx="247" cy="282" r="4" fill="rgba(243,156,18,0.8)"/>
+  <circle cx="522" cy="282" r="4" fill="rgba(155,89,182,0.8)"/>
+  <circle cx="385" cy="312" r="4" fill="rgba(26,188,156,0.8)"/>
+
+  <!-- Etiqueta de servicios en los conectores -->
+  <text x="252" y="195" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(46,204,113,0.9)" font-weight="600">Diseño</text>
+  <text x="520" y="195" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(231,76,60,0.9)" font-weight="600">Código</text>
+  <text x="230" y="315" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(243,156,18,0.9)" font-weight="600">Equipo</text>
+  <text x="540" y="315" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="8" fill="rgba(155,89,182,0.9)" font-weight="600">API / ERP</text>
+
+  <!-- Borde exterior decorativo -->
+  <rect x="1" y="1" width="768" height="448" rx="12" fill="none" stroke="rgba(36,107,206,0.4)" stroke-width="1.5"/>
+</svg>
